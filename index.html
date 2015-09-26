@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/animate.min.css" />
+		<link rel="stylesheet" href="css/main.css" /> 
+
+		<script src="js/jquery.min.js"> </script>
+		<script src="js/bootstrap.min.js"> </script>
+		<script src="js/angular.min.js"> </script>
+		<script src="js/wow.min.js"> </script>
+		<script src="js/main.js"> </script>
+    </head>
+	
+    <body ng-app="Quiz">
+		<header class="wow fadeInDown">
+			<div class="header-content">
+				<div class="header-content-inner">
+					<h1>You think you are good at something?</h1>
+					<p>Take a quiz and find out how dumb you are!</p>
+				</div>
+			</div>
+		</header>
+		
+		<div ng-controller="TopicController" class="no-padding wow fadeInUp">
+			<div class="container-fluid">
+				<div class="row no-gutter">
+					<div class="col-lg-4 col-sm-6" ng-repeat="topic in menu">
+						<a href="#" class="card-box">
+							<img src="{{ topic.icon }}" class="img-responsive" alt="">
+							<div class="card-box-caption">
+								<div class="card-box-caption-content">
+									<div class="project-category text-faded">
+										 <h3>{{ topic.tittle }}</h3>
+									</div>
+									<div class="project-name">
+										{{ topic.description }}
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+                </div>
+            </div>
+		</div>
+
+    </body>
+</html>
