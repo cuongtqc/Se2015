@@ -1,0 +1,57 @@
+body {
+	font-family: 'Aleo';
+}
+
+.no-gutter > [class*=col-] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+#tittle {
+	background-image: url(../img/math-tittle.jpg);
+}
+
+#questionBoard {
+	margin-top: 50px;
+}
+
+#xam{
+	text-align: center;
+	font-size: 1.7em;
+}
+
+@font-face {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: normal;
+  src: 	url('fonts/Aleo.woff') format('woff'),  
+		url("fonts/Aleo.woff2") format("woff2"),
+		url("fonts/Aleo.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: bold;
+  src: 	url('fonts/Bold.woff') format('woff'),  
+		url("fonts/Bold.woff2") format("woff2"),
+		url("fonts/Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Aleo';
+  font-style: italic;
+  font-weight: normal;
+  src: 	url('fonts/Italic.woff') format('woff'),  
+		url("fonts/Italic.woff2") format("woff2"),
+		url("fonts/Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Aleo';
+  font-style: italic;
+  font-weight: bold;
+  src: 	url('fonts/BoldItalic.woff') format('woff'),  
+		url("fonts/BoldItalic.woff2") format("woff2"),
+		url("fonts/BoldItalic.ttf") format("truetype");
+}
